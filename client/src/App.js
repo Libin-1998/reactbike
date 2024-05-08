@@ -9,7 +9,6 @@ function App() {
     <h3 class="col text-warning">
      <b> AUG 12-13-2020</b>
     </h3>
-  
     <h2 class="col">
     <b>CORREDO</b>
     </h2>

@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
     <div class="cont text-warning">
-      <h1><b>CORREDO RACE</b></h1>
+      <h1 class="head"><b>CORREDO RACE</b></h1>
       <h1><b>2023</b></h1>
       <div class="butt text-center mt-5 pt-5">
       <button type="button" class="btn btn-warning text-white">VIEW MORE</button></div>

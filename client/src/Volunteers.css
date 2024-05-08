@@ -1,0 +1,25 @@
+.vol{
+    margin-left: 200px;
+    padding-top: 150px;
+}
+.btn{
+    margin-left: 200px;
+    margin-bottom: 250px;
+}
+.volunteer{
+    background-image: url(/public/img/imagevolunteer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 900%;
+}
+.words{
+    padding-left: 100px;
+}
+.rider{
+    padding-left: 100px;
+    color: white;
+    font-style: italic;
+}
+.colour{
+    background-color: rgb(232, 208, 178);
+}
