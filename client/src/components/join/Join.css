@@ -1,0 +1,9 @@
+.now{
+    background-image: url(/public/img/enetrnow-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(238, 135, 9);
+    height: 300px;
+    margin: 100px;
+    padding: 22px;
+}

@@ -2,7 +2,7 @@
     margin-left: 200px;
     padding-top: 150px;
 }
-.btn{
+.btns{
     margin-left: 200px;
     margin-bottom: 250px;
 }
@@ -12,11 +12,8 @@
     background-size: cover;
     height: 900%;
 }
-.words{
-    padding-left: 100px;
-}
 .rider{
-    padding-left: 100px;
+    padding-left: 124px;
     color: white;
     font-style: italic;
 }

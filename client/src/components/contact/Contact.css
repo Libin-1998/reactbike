@@ -1,0 +1,20 @@
+.header{
+    margin-left: 50px;
+    margin-top: 60px;
+}
+.name{
+    margin-left: 50px;
+
+}
+.message{
+    margin-left: 50px;
+    margin-top: 4px;
+
+}
+.check{
+    margin-left: 50px;
+    margin-top: 60px;
+}
+.contact{
+    background-image: url(../../../public/img/Motocross\ \(11\)con-img.jpg);
+}
