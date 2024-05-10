@@ -4,9 +4,9 @@ import "./Sections.css"
 export default function Sections() {
   return (
     <>
-      <div class="container m-5">
+      <div class="container mt-4 ms-5">
         <div class="row">
-          <div class="col-lg-5 col-sm-6 text-secondary">
+          <div class="col-lg-6 col-sm-6 text-secondary">
             <b>ENTRY FEES</b>
             <h1 class="fees text-success">
               entry fee <br></br> option
@@ -24,27 +24,27 @@ export default function Sections() {
               contact us!
             </p>
           </div>
-          <div class="col-lg-3 m-1 col-sm-4 pt-3 bg-warning text-center">
+          <div class="col-lg-2 m-1 col-sm-4 pt-3 bg-warning text-center">
             <h2>$75</h2>
-            <h4>FULL PACK REGISTRATION</h4><hr/>
-            <h5>Storage camera <br></br> Changing room<br></br>
+            <h5>FULL PACK REGISTRATION</h5><hr/>
+            <h6>Storage camera <br></br> Changing room<br></br>
               Medal<br></br>
               Event t-shirt 
               <br></br>Insurance
-            </h5>
+            </h6>
             <div class="button p-3">
               <button type="button" class="btn btn-success">
                 ENTER NOW
               </button>
             </div>
           </div>
-          <div class="col-lg-3 m-1 col-sm-4  text-center p-3 bg-warning">
+          <div class="col-lg-2 m-1 col-sm-4  text-center pt-3 bg-warning">
             <h2>$55</h2>
-            <h4>FULL PACK REGISTRATION</h4><hr/>
-            <h5>
+            <h5>FULL PACK REGISTRATION</h5><hr/>
+            <h6>
               Storage camera <br></br>Chinging room<br></br>Medal<br></br>-
               <br></br>-
-            </h5>
+            </h6>
 
             <button type="button" class="btn btn-success mt-3">
               ENTER NOW

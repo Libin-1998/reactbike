@@ -4,7 +4,7 @@ import "./Home.css"
 export default function Home() {
   return (
     <>
-    <div class="cont text-warning">
+    <div class="container-fluid homehead text-warning">
       <h1 class="head"><b>CORREDO RACE <br></br> 2023</b></h1>
 
       <div id="countdown">

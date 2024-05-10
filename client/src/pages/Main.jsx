@@ -7,6 +7,7 @@ import Contact from '../components/contact/Contact'
 import Blog from '../components/blog/Blog'
 import Join from '../components/join/Join'
 import Footer from '../components/footer/Footer'
+import Gallery from '../components/gallery/Gallery'
 
 export default function Main() {
   return (
@@ -17,7 +18,7 @@ export default function Main() {
           <b> AUG 12-13-2020</b>
         </h3>
         <h2 class="col">
-          <b>CORREDO</b>
+          <img src={"./img/logo.png"}height={'40px'}></img>
         </h2>
         <div class="col mt-2">
           <i class="bi bi-pinterest p-2 me-1 bg-warning"></i>
@@ -31,8 +32,9 @@ export default function Main() {
     <Home />
     <Sections />
     <Volunteers />
-    <Contact />
     <Blog/>
+    <Gallery/>
+    <Contact />
     <Join/>
     <Footer/>
   </>

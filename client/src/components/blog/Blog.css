@@ -4,4 +4,7 @@
 .news{
     color: rgb(236, 124, 11);
 }
-
+.cover{
+    background-color: rgb(245, 232, 222);
+    width: 440px;
+}

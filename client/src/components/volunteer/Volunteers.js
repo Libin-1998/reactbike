@@ -5,12 +5,12 @@ export default function Volunteers() {
   return (
     <>
 
-<div class="volunteer">
+<div class="container-fluid mt-5 volunteer">
     <h1 class="vol text-warning"><b>WE ARE LOOKING FOR <br></br> VOLUNTEERS</b></h1>
 <button type="button" class="btn btns  btn-success">JOIN THE TEAM</button>
 </div>
 
-<div class="container-fluid colour justify-content-between">
+<div class="container-fluid bgcolour justify-content-between">
   <div class="row align-items-start p-5">
     <div class="col-4 m-4">
       <h1 class="text-white">345,568</h1>

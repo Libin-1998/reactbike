@@ -1,20 +1,24 @@
-.header{
+.heading{
     margin-left: 50px;
-    margin-top: 60px;
 }
-.name{
-    margin-left: 50px;
 
-}
-.message{
-    margin-left: 50px;
-    margin-top: 4px;
-
-}
 .check{
     margin-left: 50px;
     margin-top: 60px;
 }
 .contact{
-    background-image: url(../../../public/img/Motocross\ \(11\)con-img.jpg);
+    background-image: url(../../../public/img/gallery-3.jpg);
+    height: 600px;
+}
+.messageheight{
+    padding-bottom: 72px;
+}
+.nameheight{
+    height: 42px;
+}
+.emailheight{
+    height: 42px;
+}
+.space{
+    padding-top: 90px;
 }

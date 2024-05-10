@@ -1,0 +1,32 @@
+.reg{
+    background-image: url(../../../public/img/reg-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 600%; */
+}
+.emailwidth{
+    width: 70%;
+}
+.namewidth{
+    width: 70%;
+}
+.addresswidth{
+    width: 70%;
+}
+.statewidth{
+    width: 70%;
+}
+.zipwidth{
+    width: 20%;
+
+}
+.phonewidth{
+    width: 70%;
+}
+.citywidth{
+    width: 70%;
+
+}
+.size{
+    width: 37%;
+}
