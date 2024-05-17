@@ -1,4 +1,4 @@
-.vol{
+/* .vol{
     margin-left: 200px;
     padding-top: 150px;
 }
@@ -19,4 +19,66 @@
 }
 .bgcolour{
     background-color: rgb(232, 208, 178);
+}
+@media (max-width:400px){
+    .vol{
+        font-size: small;
+    }
+} */
+
+
+.volunteers{
+    padding-left: 200px;
+    padding-top: 100px;
+    background-image: url(../../../public/img/imagevolunteer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    color: rgba(232, 206, 8, 0.985);
+}
+.jointeambut{
+    background-color: rgba(26, 91, 2, 0.985);
+    border: none;
+    padding: 5px;
+    margin-bottom: 10px;
+    color: white;
+    
+}
+.vol{
+    padding-bottom: 20px;
+}
+@media(max-width:380px){
+    .volunteers{
+        padding-left: 50px;
+    }
+}
+.nums{
+    color: white;
+}
+.participent{
+    background-color:rgb(247, 219, 192)
+}
+.reviewspart{
+    padding: 40px;
+}
+.peterimage{
+    width: 100px;
+    height: 100px;
+}
+.reviews{
+    padding: 40px;
+    background-color: black;
+}
+.reviewcolor{
+    color: white;
+    opacity: 50%;
+}
+.headcolor{
+    color: rgba(232, 206, 8, 0.985);
+    padding-bottom: 10px;
+
+}
+.ridernamecolor{
+    color: white;
+
 }

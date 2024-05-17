@@ -5,6 +5,7 @@ const shopRoutes = require('./routes/shopRoutes')
 const pardsRoutes = require('./routes/pardsRoutes')
 const loginRoutes = require('./routes/loginRoutes')
 const cartRoutes = require('./routes/cartRoutes')
+const eventRoutes = require('./routes/eventRoutes')
 
 var app=express()
 
@@ -25,6 +26,8 @@ app.use('/api/shops',shopRoutes)
 app.use('/api/spare',pardsRoutes)
 app.use('/api/logs',loginRoutes)
 app.use('/api/carts',cartRoutes)
+app.use('./api/bike',eventRoutes)
+
 
 app.get('/',(req,res)=>{
     res.send('Home')

@@ -1,15 +1,16 @@
-import React from 'react'
+import React from 'react';
+import "./Gallery.css";
 
 export default function Gallery() {
   return (
     <>
 
-    <div class="container d-flex justify-content-between mt-5 mb-5">
+    {/* <div class="container d-flex justify-content-between mt-5 mb-5">
      <h1 class="text-warning"> <b> visit our gallery</b></h1>
      <button class="me-1 bg-warning border text-white"><h6 class="pe-2 ps-2">VISIT GALLERY</h6></button>
     </div>
     
-<div class="container">
+<div class="container gallery">
   <div class="row ">
     <div class="col-4 ">
         <img src={"./img/gallery-3.jpg"}width={'352px'} height={'200px'}></img>
@@ -45,10 +46,40 @@ export default function Gallery() {
     
 
 
+  </div> */}
+
+
+<div className='container visitgallery'>
+  <h2><b>Visit Our Gallery</b></h2>
+  <button className='visitgallerybut'>VISIT GALLERY</button>
   </div>
 
+<div className='container gallerys'>
+<div className='firstrow'>
+    <div className='imgfirst'>
+    <img src={"./img/gallery1.jpg"}height={"200px"} width={"362px"}></img>
+    </div>
 
+    <div className=' imgsecond'>
+    <img src={"./img/gallery2.jpg"}height={"200px"} width={"362px"}></img>
+    </div>
 
+    <div className=' imgthree'>
+    <img src={"./img/gallery3.jpg"}height={"200px"} width={"362px"}></img>
+    </div>
+    </div>
+
+    <div className='secondrow'>
+    <div className='imgfour '>
+    <img src={"./img/gallery4.jpg"}height={"250px"} width={"548px"}></img>
+    </div>    
+
+    <div className='imgfive'>
+    <img src={"./img/gallery5.jpg"}height={"250px"} width={"548px"}></img>
+    </div>
+    </div>
+    </div>
+    
     </>
   )
 }

@@ -4,3 +4,6 @@ color: red;
 .home{
     color: orange;
 }
+a{
+    text-decoration: none;
+}

@@ -1,0 +1,43 @@
+/* .img{
+    width: 300px;
+}
+.usernamewidth{
+width: 300px;
+}
+.passwordwidth{
+    width: 300px;
+}
+.btn{
+    width: 27%;
+}
+.fb{
+    height: 15px;
+    width: 15px;
+}
+.google{
+    height: 15px;
+    width: 15px;
+}
+.backg{
+    background-image: url(../../../public/img/gallery-3.jpg);
+} */
+
+
+
+
+
+
+
+.bgimage{
+background-image: url(../../../public/img/gallery-3.jpg);
+background-repeat: no-repeat;
+background-size: cover ;
+}
+.fb{
+    height: 15px;
+    width: 15px;
+}
+.google{
+    height: 15px;
+    width: 15px;
+}

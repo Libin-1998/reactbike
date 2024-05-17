@@ -1,4 +1,4 @@
-.heading{
+ /* .heading{
     margin-left: 50px;
 }
 
@@ -8,7 +8,9 @@
 }
 .contact{
     background-image: url(../../../public/img/gallery-3.jpg);
-    height: 600px;
+    background-size: cover;
+    height: 200%;
+    
 }
 .messageheight{
     padding-bottom: 72px;
@@ -18,7 +20,110 @@
 }
 .emailheight{
     height: 42px;
+    margin-top: 15px;
 }
 .space{
     padding-top: 90px;
 }
+@media(max-width:988px){
+    .box{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+@media(max-width:1000px){
+    
+    .messageheight{
+        width: 80%;
+        padding-bottom: 72px;
+        margin-top: 10px;
+    }
+    .nameheight{
+        width: 80%;
+        height: 42px;
+        margin-bottom: 2%;
+    }
+    .emailheight{
+        width: 80%;
+        height: 42px;
+    }
+} */
+
+
+
+  .contactcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px; 
+  }
+
+  .left {
+    /* flex: 1; */
+    width: 200px;
+  }
+
+  .right {
+    /* flex: 1; */
+    width: 200px;
+  }
+
+  .text-field {
+    width: 100%;
+    margin-bottom: 10px;
+    height: 50px;
+  }
+
+  @media only screen and (max-width: 570px) {
+    .container {
+      flex-direction: column;
+
+    }
+    .left, .right {
+      flex: none;
+      width: 100%;
+    }
+
+  }
+  .text-field3{
+    height: 93%;
+    margin-left: 15px;
+  }
+
+  @media(max-width:570px){
+    .text-field3{
+    margin-left: 0px;
+    width: 100%;
+    height: 50px;
+    }
+
+  }
+  .words{
+    margin-left: 5px;
+  }
+
+  .contactbut{
+    margin-top: 20px;
+  }
+
+  .submitbut{
+    background-color: yellow;
+    border: none;
+    border-radius: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: large;
+    font-weight: 800;
+
+  }
+
+  .contact{
+    background-image: url(../../../public/img/gallery-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+  }
+
+  ::placeholder {
+    text-align: center; 
+ }
+  

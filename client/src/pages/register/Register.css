@@ -1,32 +1,84 @@
-.reg{
+ /* .reg{
     background-image: url(../../../public/img/reg-img.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    /* height: 600%; */
+    height: 600%; 
 }
-.emailwidth{
+.passwordwidth{
     width: 70%;
+border-radius: 5px;
+border: none;
 }
 .namewidth{
     width: 70%;
+    border-radius: 5px;
+border: none;
 }
-.addresswidth{
+.emailwidth{
     width: 70%;
+    border-radius: 5px;
+border: none;
 }
 .statewidth{
     width: 70%;
+    border-radius: 5px;
+border: none;
 }
 .zipwidth{
     width: 20%;
-
+    border-radius: 5px;
+    border: none;
 }
 .phonewidth{
     width: 70%;
+    border-radius: 5px;
+border: none;
 }
 .citywidth{
     width: 70%;
-
+    border-radius: 5px;
+    border: none;
 }
 .size{
     width: 37%;
+    border-radius: 5px;
+border: none;
+}
+ */
+
+ .star{
+    color: red;
+ }
+  .parentdiv {
+    display: flex;
+  }
+  
+  .column {
+    flex: 50%;
+  }
+  .inputwidth{
+    width: 50%;
+  }
+  .zipwidth{
+    width: 50px;
+  }
+.gendercol{
+    width: 20%;
+}
+.bgimage{
+    background-image: url(../../../public/img/reg-img.jpg);
+    color: white;
+    margin: 20px;
+}
+.parentdiv{
+    margin: 50px;
+}
+.clicked{
+    text-align: center;
+}
+.sizebox{
+    width: 50px;
+}
+.fullwidth{
+    width: 70%;
 }
