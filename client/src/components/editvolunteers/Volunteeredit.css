@@ -1,0 +1,84 @@
+.volrow{
+    display: flex;
+    justify-content: space-evenly;
+}
+.volhone{
+    text-align: center;
+    padding: 20px;
+    color: orange;
+}
+.volcolumnone{
+    width: 30%;
+    padding: 10px;
+}
+.volcolumntwo{
+    width: 30%;
+    padding: 10px;
+
+}
+.volwidthone{
+    width: 90%;
+    height: 40px;
+    opacity: 50%;
+    border: none;
+}
+.volwidthtwo{
+    width: 90%;
+    height: 40px;
+    opacity: 50%;
+    border: none;
+}
+.volwidththree{
+    width: 90%;
+    height: 40px;
+    opacity: 50%;
+    border: none;
+}
+.volwidthfive{
+    width: 50px;
+    opacity: 50%;
+    border: none;
+
+}
+.volwidthnine{
+    width: 50px;
+    opacity: 50%;
+    border: none;
+}
+.volwidthsix{
+    width: 90%;
+    height: 40px;
+    opacity: 50%;
+    border: none;
+}
+.volwidtheight{
+    width: 90%;
+    height: 40px;
+    opacity: 50%;
+    border: none;
+}
+.volwidthseven{
+    width: 50%;
+    height: 40px;
+    opacity: 50%;
+    border: none;
+}
+.volBG{
+    background-image: url(../../../public/img/volunteerBG.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: red;
+}
+.volbutton{
+    text-align: center;
+    padding: 20px;
+}
+.volreg{
+    background-color: orange;
+    border: none;
+    padding: 8px;
+    color: white;
+}

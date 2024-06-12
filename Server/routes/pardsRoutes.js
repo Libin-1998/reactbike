@@ -1,6 +1,7 @@
 var express=require('express')
 var mongoose=require('mongoose')
 const pardsSchema = require('../models/pardsSchema')
+const eventSchema = require('../models/eventSchema')
 var pardsRoutes=express.Router()
 
 pardsRoutes.post('/add-product',async(req,res)=>{
@@ -134,7 +135,6 @@ pardsRoutes.get('/viewdatas/company',async(req,res)=>{
         })
     }
 })
-
 
 
 module.exports=pardsRoutes

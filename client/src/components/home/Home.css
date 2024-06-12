@@ -101,6 +101,8 @@ justify-content: center;
   background-image: url(../../../public/img/bikerace\ .jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 3%;
+  width: 90%;
 }
 
 @media(max-width:418px){

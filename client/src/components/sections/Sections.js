@@ -24,7 +24,7 @@ export default function Sections() {
               contact us!
             </p>
           </div>
-          <div class="col-lg-2 m-1 col-sm-4 pt-3 bg-warning text-center">
+          <div data-aos="zoom-in" class="col-lg-2 m-1 col-sm-4 pt-3 bg-warning text-center">
             <h2>$75</h2>
             <h5>FULL PACK REGISTRATION</h5><hr/>
             <h6>Storage camera <br></br> Changing room<br></br>
@@ -38,7 +38,7 @@ export default function Sections() {
               </button>
             </div>
           </div>
-          <div class="col-lg-2 m-1 col-sm-4  text-center pt-3 bg-warning">
+          <div data-aos="zoom-in" class="col-lg-2 m-1 col-sm-4  text-center pt-3 bg-warning">
             <h2>$55</h2>
             <h5>FULL PACK REGISTRATION</h5><hr/>
             <h6>

@@ -6,6 +6,9 @@ import Contact from '../components/contact/Contact'
 import Blog from '../components/blog/Blog'
 import Join from '../components/join/Join'
 import Gallery from '../components/gallery/Gallery'
+import Event from '../components/event/Event'
+import Eventform from '../components/eventform/Eventform'
+// import Counter from '../components/counter/Counter'
 
 export default function Main() {
   return (
@@ -15,8 +18,11 @@ export default function Main() {
     <Volunteers />
     <Blog/>
     <Gallery/>
-    <Contact />
+    <Contact /> 
     <Join/>
+    <Event/>
+
+    {/* <Counter/> */}
   </>
   )
 }

@@ -1,0 +1,63 @@
+.eventrow{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* justify-content: center; */
+    margin-top: 10px;
+    margin-bottom: 50px;
+    padding-left: 10px;
+    row-gap: 50px;
+}
+.racedate{
+    background-color: orange;
+    width: 89px;
+    padding: 2px;
+    color: white;
+}
+.eventbutton{
+    background-color: orange;
+    border: none;
+    padding: 5px;
+    color: white;
+
+}
+.event{
+color: green;
+}
+.race{
+    color: yellow;
+}
+.eventheading{
+    padding: 30px;
+}
+@media(max-width:400px){
+    .eventrow{
+        text-align: center;
+    }
+}
+
+@media(max-width:400px){
+    .racedate{
+        text-align: center;
+    }
+}
+
+.editbutton{
+    background-color: green;
+    border: none;
+padding: 5px;
+margin-left: 5px;
+color: white;
+
+
+}
+.deletebutton{
+    background-color: red;
+    border: none;
+padding: 5px;
+margin-left: 5px;
+color: white;
+}
+.linkcolor{
+    color: white;
+}

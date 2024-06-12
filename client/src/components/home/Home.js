@@ -57,11 +57,11 @@ export default function Home() {
 </div> */}
 
 
-<div className='starting'>
-<h1 className='heading'>CORREDO RACE<br></br>2023</h1>
+<div className='container-fluid starting'>
+<h1 className='heading' data-aos="fade-up-left">CORREDO RACE<br></br>2023</h1>
 
 <div id="countdown">
-    <div id="timer">
+    <div id="timer" data-aos="fade-down-right">
       <div>
         <span id="days" className='font'>0</span>
         <span className='font'>Days</span>

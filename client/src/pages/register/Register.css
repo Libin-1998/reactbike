@@ -1,77 +1,28 @@
- /* .reg{
-    background-image: url(../../../public/img/reg-img.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 600%; 
-}
-.passwordwidth{
-    width: 70%;
-border-radius: 5px;
-border: none;
-}
-.namewidth{
-    width: 70%;
-    border-radius: 5px;
-border: none;
-}
-.emailwidth{
-    width: 70%;
-    border-radius: 5px;
-border: none;
-}
-.statewidth{
-    width: 70%;
-    border-radius: 5px;
-border: none;
-}
-.zipwidth{
-    width: 20%;
-    border-radius: 5px;
-    border: none;
-}
-.phonewidth{
-    width: 70%;
-    border-radius: 5px;
-border: none;
-}
-.citywidth{
-    width: 70%;
-    border-radius: 5px;
-    border: none;
-}
-.size{
-    width: 37%;
-    border-radius: 5px;
-border: none;
-}
- */
-
- .star{
+.star{
     color: red;
  }
   .parentdiv {
     display: flex;
+    background-color:rgb(15, 14, 14);
+    color: white;
+    justify-content: space-evenly;
+    gap: 20%;
+    /* padding: 50px; */
+    font-size: 18px;
+    text-shadow: 4px 4px 6px black; 
   }
   
-  .column {
-    flex: 50%;
-  }
   .inputwidth{
-    width: 50%;
+    width: 80%;
   }
   .zipwidth{
-    width: 50px;
+    width: 60px;
   }
 .gendercol{
     width: 20%;
 }
 .bgimage{
     background-image: url(../../../public/img/reg-img.jpg);
-    color: white;
-    margin: 20px;
-}
-.parentdiv{
-    margin: 50px;
 }
 .clicked{
     text-align: center;
@@ -81,4 +32,20 @@ border: none;
 }
 .fullwidth{
     width: 70%;
+}
+.regforms{
+  padding: 50px;
+  padding-top: 0px;
+}
+.columnreg{
+  width: 500px;
+}
+.dobwidth{
+  width: 130px;
+}
+@media(max-width:300px){
+  .dobwidth{
+    font-size: small;
+    width: 90px;
+  }
 }

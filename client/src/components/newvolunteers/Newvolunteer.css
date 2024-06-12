@@ -1,0 +1,71 @@
+.newrow{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.newcolumn{
+    width: 29%;
+    margin: 30px;
+    background-color: rgb(246, 191, 142);
+    border-radius: 20px;
+}
+.firstone{
+    padding-left: 20px;
+    padding-bottom: 50px;
+}
+.fa{
+    padding-right: 20px;
+    color: orange;
+}
+.nameclass{
+    color: orange;
+}
+.newvol{
+    background-image: url(../../../public/img/newvolunteerBG.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    mix-blend-mode: darken;
+}
+
+@media(max-width:760px){
+    .newcolumn{
+        display: flex;
+        flex-direction: column;
+    }
+}
+.voledit{
+    background-color:green;
+border: none;
+margin-right: 5px;
+}
+.voldelete{
+    background-color:red;
+    border: none;
+    color: white;
+}
+.volhead{
+    text-align: center;
+    color: orange;
+    padding-top: 15px;
+}
+.ulinevol{
+    color: white;
+}
+
+.volimgname{
+    height: 80px;
+    width: 80px;
+    border-radius:300px;
+    margin-top: 20px; 
+  
+}
+@media(max-width:738px){
+    .newcolumn{
+        width: 80%;
+    }
+}
+@media(max-width:343px){
+.firstone{
+font-size: small;
+}
+}

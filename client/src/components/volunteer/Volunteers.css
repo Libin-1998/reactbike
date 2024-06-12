@@ -24,61 +24,88 @@
     .vol{
         font-size: small;
     }
-} */
+}  */
 
 
-.volunteers{
-    padding-left: 200px;
-    padding-top: 100px;
+
+.volunteerbg{
     background-image: url(../../../public/img/imagevolunteer.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 400px;
-    color: rgba(232, 206, 8, 0.985);
+    height: 100vh;
+    padding-left: 150px;
+    padding-top: 90px;
+    color: white;
 }
-.jointeambut{
-    background-color: rgba(26, 91, 2, 0.985);
+.buttonbg{
+    background-color: orange;
+    color: white;
     border: none;
-    padding: 5px;
-    margin-bottom: 10px;
-    color: white;
-    
+    padding: 10px;
+    margin-top: 20px;
 }
-.vol{
-    padding-bottom: 20px;
-}
-@media(max-width:380px){
-    .volunteers{
-        padding-left: 50px;
-    }
-}
-.nums{
-    color: white;
-}
-.participent{
-    background-color:rgb(247, 219, 192)
-}
-.reviewspart{
-    padding: 40px;
-}
-.peterimage{
-    width: 100px;
-    height: 100px;
+.participants{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+    background-color: rgb(252, 228, 198);
 }
 .reviews{
-    padding: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+.peterimage{
+    height: 100px;
+    width: 100px;
+}
+.partcolumn{
+    width: 50%;
     background-color: black;
+    padding: 30px;
+    margin-bottom: 50px;
+}
+.headspace{
+    padding-left: 10px;
+    padding-bottom: 20px;
 }
 .reviewcolor{
     color: white;
     opacity: 50%;
 }
-.headcolor{
-    color: rgba(232, 206, 8, 0.985);
-    padding-bottom: 10px;
-
-}
 .ridernamecolor{
     color: white;
+}
+.nums{
+    color: white;
+}
+.headspace{
+    color: orange;
+}
+@media(max-width:610px){
+    .volunteerbg{
+width: 100%;
+padding-left: 50px;
+    }
+}
 
+@media(max-width:1134px){
+    .reviews{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media(max-width:440px){
+    .participants{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media(max-width:440px){
+    .partcolumn{
+        width: 100%;
+    }
+}   
+.bloghead{
+    width: 98%;
 }

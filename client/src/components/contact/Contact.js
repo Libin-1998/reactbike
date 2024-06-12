@@ -1,7 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Contact.css";
 
 export default function Contact() {
+  const [contact, setcontact] = useState({
+    fullname: "",
+    emailid: "",
+    yourmessage: "",
+  });
+
+  const contactchange = (event) => {
+    const name = event.target.name;
+    const value = event.target.value;
+    setcontact({ ...contact, [name]: value });
+  };
+
+  console.log(contact);
+
   return (
     <>
       {/* <div class="container-fluid contact mt-5">
@@ -44,35 +58,52 @@ export default function Contact() {
         </div>
       </div> */}
 
+      <div className="container contact" data-aos="fade-down-right">
+        <h1>
+          HAVE QUESTIONS?<br></br>CONTACT US
+        </h1>
 
+        <div class="container contactcontainer">
+          <div class="left" data-aos="flip-left">
+            <input
+              type="text"
+              class="text-field"
+              placeholder="Full Name"
+              name="fullname"
+              onChange={contactchange}
+            />
+            <input
+              type="text"
+              class="text-field"
+              placeholder="Email Id"
+              name="emailid"
+              onChange={contactchange}
+            />
+          </div>
+          <div class="right" data-aos="flip-left">
+            <input
+              type="text"
+              class="text-field3"
+              placeholder="Your Message"
+              name="yourmessage"
+              onChange={contactchange}
+            />
+          </div>
+          </div>
 
+        <div className="check">
+          <input type="checkbox"></input>
 
-      <div className="container-fluid contact">
-  <h1>HAVE QUESTIONS?<br></br>CONTACT US</h1>
-
-<div class="container contactcontainer">
-
-  <div class="left">
-    <input type="text" class="text-field" placeholder="Full Name"/>
-    <input type="text" class="text-field" placeholder="Email Id"/>
-  </div>
-  <div class="right">
-    <input type="text" class="text-field3" placeholder="Your Message"/>
-  </div>
-</div>
-
-<div className="check">
-  <input type="checkbox"></input>
-
-  <span className="words">
+          <span className="words">
             By using this form you agree with the storage and handling of
             <br></br> your data by this website.
-</span>
+          </span>
           <div className="contactbut">
-           <button className="submitbut">Submit</button>
+            <button className="submitbut">Submit</button>
           </div>
-          </div>
-          </div>
+        </div>
+
+      </div>
     </>
   );
 }

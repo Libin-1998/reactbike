@@ -15,12 +15,13 @@
 .join{
     display: flex;
     justify-content:space-around;
-    margin: 30px;
+    margin-top: 30px;
     background-image: url(../../../public/img/enetrnow-img.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 80vh;
     padding-top: 50px;
+    width: 90%;
 }
 .joinenter{
     background-color: orange;

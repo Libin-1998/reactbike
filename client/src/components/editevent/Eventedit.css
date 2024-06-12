@@ -1,0 +1,60 @@
+.addevent{
+    background-image: url(../../../public/img/eventBg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 10px;
+
+}
+.formstart{
+    display: flex;
+    padding-left: 25%;
+    padding-right: 20px;
+}
+.editeventwidth{
+    width: 300%;
+    border: none;
+    height: 40px;
+    opacity: 75%;
+    border-radius: 5px;
+}
+.htwoevent{
+    text-align: center;
+    color: orange;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.starred{
+    color: red;
+}
+.labelcolor{
+    font-style: oblique;
+    font-weight: 900;
+    color: white;
+}
+@media(max-width:992px){
+    .editeventwidth{
+        width: 200%;
+    }
+}
+
+@media(max-width:510px){
+    .eventwidth{
+        width: 100%;
+    }
+}
+.buttonevent{
+    text-align: center;
+
+}
+.eventsubmit{
+    border: none;
+    margin-bottom: 10px;
+    background-color: orange;
+    padding-left: 10px;
+    padding-right: 10px;
+
+
+}
+.namefile{margin-bottom: 0%;
+
+}

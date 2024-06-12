@@ -17,7 +17,7 @@ export default function Join() {
   </div>
   </div> */}
 
-  <div className='container join'>
+  <div className='container join' data-aos="fade-up-left">
     <h3 className='joining'>join our race and get to know<br></br>how fast you are</h3>
     <div className='joinenterbut'>
     <button className='joinenter'>ENTER NOW</button>
