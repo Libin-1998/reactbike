@@ -4,6 +4,7 @@ const bcrypt = require("bcryptjs");
 const loginSchema = require("../models/loginSchema");
 const registerSchema = require("../models/registerSchema");
 var loginRoutes = express.Router();
+var jwt=require('jsonwebtoken')
 
 loginRoutes.post("/login", async (req, res) => {
   try {
@@ -27,11 +28,22 @@ loginRoutes.post("/login", async (req, res) => {
     }
     const isPasswordCorrect = await bcrypt.compare(req.body.password,checkname.password);
     if (isPasswordCorrect) {
+
+      const token=jwt.sign({
+        userId:checkname._id,
+        name:checkname.name,
+      },
+      "secret_key",
+      {
+        expiresIn:'1h'
+      }
+    )
       return res.status(200).json({
         success: true,
         error: false,
         message: "login success",
         data: checkname,
+        token:token,
       });
     }
      else {

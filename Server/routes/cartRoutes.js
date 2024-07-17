@@ -150,5 +150,4 @@ cartRoutes.get('/deletes',async(req,res)=>{
     }
 })
 
-
 module.exports=cartRoutes;

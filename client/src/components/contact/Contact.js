@@ -58,12 +58,12 @@ export default function Contact() {
         </div>
       </div> */}
 
-      <div className="container contact" data-aos="fade-down-right">
+      <div className="container-fluid contact" data-aos="fade-down-right">
         <h1>
           HAVE QUESTIONS?<br></br>CONTACT US
         </h1>
 
-        <div class="container contactcontainer">
+        <div class="container-fluid contactcontainer">
           <div class="left" data-aos="flip-left">
             <input
               type="text"

@@ -130,32 +130,4 @@ eventRoutes.delete("/delete/:id", async (req, res) => {
   }
 });
 
-// eventRoutes.post("/update/:id", async (req, res) => {
-//   const old = await eventSchema.findOne({ _id: req.params.id });
-//   const edit = {
-//     event_name: req.body.event_name ? req.body.event_name : old.event_name,
-//     date: req.body.date ? req.body.date : old.date,
-//     time: req.body.time ? req.body.time : old.time,
-//     fee: req.body.fee ? req.body.fee : old.fee,
-//     place: req.body.place ? req.body.place : old.place,
-//   };
-//   const updated = await eventSchema.updateOne(
-//     { _id: req.params.id },
-//     { $set: edit }
-//   );
-//   if (updated) {
-//     res.status(200).json({
-//       success: true,
-//       error: false,
-//       message: "updated successfully",
-//     });
-//   } else {
-//     res.status(400).json({
-//       success: false,
-//       error: true,
-//       message: "not updated",
-//     });
-//   }
-// });
-
 module.exports = eventRoutes;

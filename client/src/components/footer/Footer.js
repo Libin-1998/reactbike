@@ -4,7 +4,7 @@ import "./Footer.css"
 export default function Footer() {
   return (
     <>
-    <div className='container spaces'>
+    <div className='container-fluid spaces'>
     <div class="all" data-aos="fade-up-right">
       <img src={'/img/logo.png'}width={'250px'}></img>
       <div class="mt-4" >

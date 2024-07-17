@@ -2,6 +2,7 @@ var express=require('express')
 var mongoose=require('mongoose')
 const userSchema = require('../models/userSchema')
 const loginSchema = require('../models/loginSchema')
+const auth = require('../middlewares/auth')
 
 var userRoutes=express.Router()
 
@@ -31,7 +32,7 @@ userRoutes.post('/userregister',async(req,res)=>{
 
     const log=await loginSchema(login).save()
     const userreg={
-        loginId:log._id,
+        loginId:login._id,
         name:req.body.name,
         phone:req.body.phone,
         place:req.body.place,
@@ -54,7 +55,7 @@ userRoutes.post('/userregister',async(req,res)=>{
     }
 })
 
-userRoutes.get('/viewusers',async(req,res)=>{
+userRoutes.get('/viewusers',auth,async(req,res)=>{
     const user=await userSchema.aggregate([
             {
               '$lookup': {
@@ -71,7 +72,7 @@ userRoutes.get('/viewusers',async(req,res)=>{
             success:true,
             error:false,
             data:user,
-            message:'view successfully'
+            message:'view successfully',
         })
     }
     else{

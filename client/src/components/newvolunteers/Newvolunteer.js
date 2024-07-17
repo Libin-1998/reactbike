@@ -3,22 +3,31 @@ import "./Newvolunteer.css";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
+import { useDispatch, useSelector } from "react-redux";
+import { bikezone } from "../../redux/reducers/Bikeslice";
 
 export default function Newvolunteer() {
-  const [data, setData] = useState([]);
+  // const [data, setData] = useState([]);
+
+  const newbikes=useSelector((state)=>state.bike.bikesdata)
+console.log(newbikes);
+
+const dispatch=useDispatch()
+
 
   useEffect(() => {
     axios
       .get("http://localhost:8000/api/volregister/view_volunteers")
       .then((response) => {
         console.log(response.data.data);
-        setData(response.data.data);
+        // setData(response.data.data);
+        dispatch(bikezone(response.data.data))
       })
       .catch((error) => {
         console.log(error);
       });
   },[]);
-  console.log(data);
+  console.log(newbikes);
 
   const volDelete=(id)=>{
     console.log(id);
@@ -46,7 +55,7 @@ export default function Newvolunteer() {
         <ToastContainer/>
         <h1 className="volhead">VOLUNTEERS LIST</h1>
         <div className="newrow">
-          {data.map((volunteer) => (
+          {newbikes.map((volunteer) => (
             <div className="newcolumn">
               <div className="firstone">
                 <img src={`/img/${volunteer.image}`}className="volimgname"></img>
