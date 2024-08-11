@@ -6,10 +6,12 @@ const registerSchema = require("../models/registerSchema");
 var loginRoutes = express.Router();
 var jwt=require('jsonwebtoken')
 
+
 loginRoutes.post("/login", async (req, res) => {
   try {
     const name = req.body.name;
     const password = req.body.password;
+    
     if (!name || !password) {
       return res.status(400).json({
         success: false,
@@ -44,6 +46,9 @@ loginRoutes.post("/login", async (req, res) => {
         message: "login success",
         data: checkname,
         token:token,
+        role:checkname.role,
+        userId:checkname._id,
+        
       });
     }
      else {
@@ -63,21 +68,21 @@ loginRoutes.post("/login", async (req, res) => {
   }
 });
 
-loginRoutes.get("/delete/:id", async (req, res) => {
-  const deleted = await loginSchema.deleteOne({ _id: req.params.id });
-  if (deleted) {
-    res.status(200).json({
-      success: true,
-      error: false,
-      message: "data deleted",
-    });
-  } else {
-    res.status(400).json({
-      success: false,
-      error: true,
-      message: "data not deleted",
-    });
-  }
-});
+// loginRoutes.get("/delete/:id", async (req, res) => {
+//   const deleted = await loginSchema.deleteOne({ _id: req.params.id });
+//   if (deleted) {
+//     res.status(200).json({
+//       success: true,
+//       error: false,
+//       message: "data deleted",
+//     });
+//   } else {
+//     res.status(400).json({
+//       success: false,
+//       error: true,
+//       message: "data not deleted",
+//     });
+//   }
+// });
 
 module.exports = loginRoutes;

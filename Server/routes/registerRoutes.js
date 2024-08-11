@@ -61,6 +61,36 @@ registerRoutes.get('/views',async(req,res)=>{
     }
 })
 
+registerRoutes.get('/viewsingle/:id',async(req,res)=>{
+    try {
+        const singleview=await registerSchema.findOne({_id:req.params.id})
+        console.log(singleview);
+    if(singleview){
+       return res.status(200).json({
+            success:true,
+            error:false,
+            data:singleview,
+            message:'single data view successfully',
+
+        })
+    }
+    else{
+       return res.status(400).json({
+            success:false,
+            error:true,
+            message:'error to view'
+        })
+    }
+    } catch (error) {
+        res.status(500).json({
+            success:false,
+            error:true,
+            message:'somrthing went wrong'
+        })
+        
+    }
+})
+
 registerRoutes.post('/update/:id',async(req,res)=>{
     const olddata=await registerSchema.findOne({_id:req.params.id})
     const update={

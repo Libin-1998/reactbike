@@ -1,33 +1,3 @@
-/* .vol{
-    margin-left: 200px;
-    padding-top: 150px;
-}
-.btns{
-    margin-left: 200px;
-    margin-bottom: 250px;
-}
-.volunteer{
-    background-image: url(/public/img/imagevolunteer.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 900%;
-}
-.rider{
-    padding-left: 124px;
-    color: white;
-    font-style: italic;
-}
-.bgcolour{
-    background-color: rgb(232, 208, 178);
-}
-@media (max-width:400px){
-    .vol{
-        font-size: small;
-    }
-}  */
-
-
-
 .volunteerbg{
     background-image: url(../../../public/img/imagevolunteer.jpg);
     background-repeat: no-repeat;

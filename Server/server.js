@@ -25,7 +25,7 @@ mongoose.connect('mongodb+srv://libinninteen98:EhF3Fs510HyhC9cd@cluster0.4e1hgmr
     console.log('connection error');
 })
 
-app.use('/api/users',userRoutes)
+// app.use('/api/users',userRoutes)
 app.use('/api/shops',shopRoutes)
 app.use('/api/spare',pardsRoutes)
 app.use('/api/logs',loginRoutes)

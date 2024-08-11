@@ -2,16 +2,29 @@ var express=require('express')
 var mongoose=require('mongoose')
 const pardsSchema = require('../models/pardsSchema')
 const eventSchema = require('../models/eventSchema')
+const multer = require('multer')
 var pardsRoutes=express.Router()
 
-pardsRoutes.post('/add-product',async(req,res)=>{
+const storage=multer.diskStorage({
+    destination:function(req,file,cb){
+        cb(null,'../client/public/img/')
+    },
+    filename:function(req,file,cb){
+        cb(null,file.originalname)
+    },
+})
+
+const upload=multer({storage})
+
+pardsRoutes.post('/add-product',upload.single('image'),async(req,res)=>{
     const reg={
         pardsname:req.body.pardsname,
         pardscode:req.body.pardscode,
         price:req.body.price,
         company:req.body.company,
-
+        image:req.file.filename,
     }
+
     const saved=await pardsSchema(reg).save()
 
     if(saved){
@@ -56,6 +69,7 @@ pardsRoutes.post('/update/:id',async(req,res)=>{
         pardscode:req.body.pardscode?req.body.pardscode:olddata.pardscode,
         price:req.body.price?req.body.price:olddata.price,
         company:req.body.company?req.body.company:olddata.company,
+        image:req.file?req.file.filename:olddata.image,
     }
     const update=await pardsSchema.updateOne({_id:req.params.id},{$set:edit})
     const datas=await pardsSchema.findOne({_id:req.params.id})

@@ -1,0 +1,65 @@
+.sparepage {
+    padding: 60px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 40px;
+}
+
+.sparecard {
+    width: 280px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 14px -2px #bebebe;
+    transition: 0.2s ease-in-out;
+}
+
+.sparecard:hover {
+    cursor: pointer;
+}
+
+.spareimg {
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background: linear-gradient(#7980c5, #9198e5);
+
+}
+.sparetext {
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+
+}
+
+.sparetext .spareh3 {
+    font-family: system-ui;
+    font-size: medium;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+}
+
+.sparetext .sparep {
+    font-family: system-ui;
+    color: #999999;
+    font-size: 13px;
+    margin: 0px;
+    text-align: center;
+    padding: 5px;
+}
+
+
+.sparebutton {
+    color: #fff;
+    font-family: system-ui;
+    font-size: small;
+    font-weight: 500;
+    background-color: #7980c5;
+    border-radius: 10px;
+    padding: 12px;
+    border: none;
+
+}

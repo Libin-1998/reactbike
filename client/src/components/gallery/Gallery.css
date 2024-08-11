@@ -29,6 +29,21 @@
     height: 250px;
     width: 550px;
 }
+
+@media(max-width:1194px){
+    .fourthimg,.fifthimg{
+        height: 200px;
+        width: 360px;
+    }
+    .galleryimg{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+
+
 .galleryimg{
 gap: 20px;
 display: flex;

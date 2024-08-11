@@ -1,0 +1,10 @@
+.profileditpage{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(55, 54, 54);
+}
+.pro{
+    width: 50%;
+    color: white;
+}

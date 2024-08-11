@@ -1,0 +1,31 @@
+.addspareclass{
+    padding: 30px;
+    border: solid;
+    /* width: 60%; */
+    max-width: 100%;
+}
+
+.addsparepage{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.addspareinput{
+    width: 100%;
+}
+
+.sparehead{
+    padding: 10px;
+    text-align: center;
+}
+
+.addsparesubmit{
+    text-align: center;
+}
+
+.addsubmit{
+    border: none;
+    background-color: rgb(186, 240, 240);
+    padding: 10px 20px 10px 20px;
+}

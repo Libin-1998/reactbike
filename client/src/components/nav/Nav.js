@@ -3,12 +3,15 @@ import "./Nav.css";
 import { Link } from "react-router-dom";
 
 export default function Nav() {
-  const logged = localStorage.getItem("isLoggedIn");
+  const logged = sessionStorage.getItem("isLoggedIn");
   console.log(logged);
+  console.log(typeof logged);
 
   const removed=()=>{
-    localStorage.removeItem('isLoggedIn')
+    sessionStorage.clear('isLoggedIn')
   }
+
+  const roles=sessionStorage.getItem('role')
 
 
 
@@ -16,34 +19,17 @@ export default function Nav() {
     <>
       <div className="container navtop">
         <ul class="nav justify-content-center mt-5">
-          <li class="nav-item">
+
+          {logged == "true" ? (
+            <>
+<li class="nav-item">
             <Link to={"/"}>
               <a class="nav-link home " href="#">
                 <b> HOME</b>
               </a>
             </Link>
           </li>
-          {/* <li class="nav-item">
-          <Link to={"/blog"}>
-          <a class="nav-link home" href="#">
-            <b>BLOG</b>
-          </a>
-          </Link>
-        </li> */}
-          {/* <li class="nav-item">
-          <Link to={'/join'}>
-          <a class="nav-link home" href="#">
-            <b>JOIN</b>
-          </a>
-          </Link>
-        </li> */}
-          {/* <li class="nav-item">
-            <Link to={"/gallery"}>
-              <a class="nav-link home" href="#">
-                <b>GALLERY</b>
-              </a>
-            </Link>
-          </li> */}
+
           <li class="nav-item">
             <Link to={"/newvolunteer"}>
               <a class="nav-link home" href="#">
@@ -51,20 +37,7 @@ export default function Nav() {
               </a>
             </Link>
           </li>
-          {/* <li class="nav-item">
-          <Link to={'/sections'}>
-          <a class="nav-link home" href="#">
-            <b>SECTIONS</b>
-          </a>
-          </Link>
-        </li> */}
-          <li class="nav-item">
-            <Link to={"/contact"}>
-              <a class="nav-link home" href="#">
-                <b>CONTACTS</b>
-              </a>
-            </Link>
-          </li>
+
           <li class="nav-item">
             <Link to={"/events"}>
               <a class="nav-link home" href="">
@@ -73,46 +46,112 @@ export default function Nav() {
             </Link>
           </li>
 
-          {/* <li class="nav-item">
-              <Link to={'/counter'}>
-              <a class="nav-link home" href="">
-                <b>COUNTER</b>
-              </a>
-              </Link>
-        </li> */}
-
           <li class="nav-item">
-            <Link to={"/addevents"}>
+            <Link to={"/spareparts"}>
               <a class="nav-link home" href="">
-                <b>ADD EVENTS</b>
+                <b>SPARE PARTS</b>
               </a>
             </Link>
           </li>
 
           <li class="nav-item">
-            <Link to={"/volform"}>
+            <Link to={"/carts"}>
               <a class="nav-link home" href="">
-                <b>ADD VOLUNTEERS</b>
+                <b>CARTS</b>
               </a>
             </Link>
           </li>
-          {logged == "true" ? (
-            <>
-              <li class="nav-item">
-                <a class="nav-link home" href="">
+            
+
+    {roles=='admin' ?(<>
+          
+          <li class="nav-item">
+      <Link to={"/addspare"}>
+        <a class="nav-link home" href="">
+          <b>ADD SPARE</b>
+        </a>
+      </Link>
+    </li>
+
+    <li class="nav-item">
+      <Link to={"/addevents"}>
+        <a class="nav-link home" href="">
+          <b>ADD EVENTS</b>
+        </a>
+      </Link>
+    </li>
+
+    <li class="nav-item">
+      <Link to={"/volform"}>
+        <a class="nav-link home" href="">
+          <b>ADD VOLUNTEERS</b>
+        </a>
+      </Link>
+    </li>
+  
+
+  </>):('')}
+
+  <li class="nav-item">
+                <a class="nav-link home" href="/profile">
                   <b>PROFILE</b>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link logout" href="" onClick={removed}>
+                <a class="nav-link logout" href="/" onClick={removed}>
                   <b>LOGOUT</b>
               
                 </a>
               </li>
 
-            </>
+ </>
+
+
           ) : (
             <>
+
+             <li class="nav-item">
+            <Link to={"/"}>
+              <a class="nav-link home " href="#">
+                <b> HOME</b>
+              </a>
+            </Link>
+          </li>
+       
+          <li class="nav-item">
+            <Link to={"/spareparts"}>
+              <a class="nav-link home" href="">
+                <b>SPARE PARTS</b>
+              </a>
+            </Link>
+          </li>
+
+       
+        
+          <li class="nav-item">
+            <Link to={"/newvolunteer"}>
+              <a class="nav-link home" href="#">
+                <b>VOLUNTEERS</b>
+              </a>
+            </Link>
+          </li>
+      
+          {/* <li class="nav-item">
+            <Link to={"/contact"}>
+              <a class="nav-link home" href="#">
+                <b>CONTACTS</b>
+              </a>
+            </Link>
+          </li> */}
+
+          <li class="nav-item">
+            <Link to={"/events"}>
+              <a class="nav-link home" href="">
+                <b>EVENTS</b>
+              </a>
+            </Link>
+          </li>
+
             <li class="nav-item">
             <Link to={"/register"}>
               <a class="nav-link home" href="">
@@ -128,8 +167,12 @@ export default function Nav() {
               </a>
             </Link>
           </li>
+
+          
           </>
           )}
+
+
         </ul>
       </div>
     </>

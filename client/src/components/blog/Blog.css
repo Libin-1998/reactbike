@@ -1,57 +1,3 @@
-/* .blog{
-    color: rgb(237, 180, 105);
-}
-.news{
-    color: rgb(236, 124, 11);
-}
-.cover{
-    background-color: rgb(245, 232, 222);
-    width: 440px;
-} */
-
-
-
-
-/* .blogimg{
-    height: 220px;
-    width: 400px;
-}
-.title{
-    background-color:orange;
-    padding: 3px;
-}
-.sub{
-    margin-top: 10px;
-}
-.secondhead{
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-.colimage{
-    height: 170px;
-    width: 190px;
-}
-.date{
-    background-color:orange;
-    padding: 3px;
-
-}
-.blogsecond{
-    padding-top: 25px;
-    background-color: rgb(242, 222, 196);
-    padding: 20px;
-    width: 86%;
-    margin-bottom: 10px;
-}
-
-.colimagetwo{
-    height: 170px;
-    width: 190px;
-    margin-top: 50px;
-} */
-
-
-
 .bloghead{
 padding-left: 70px;
 padding-bottom: 30px;
@@ -63,7 +9,7 @@ padding-bottom: 30px;
 .bgnewsfeed{
     color: orange;
 }
-.title{
+.btitle{
     background-color: orange;
     padding: 4px;
 }

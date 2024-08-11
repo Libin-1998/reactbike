@@ -4,8 +4,8 @@ import "./Sections.css"
 export default function Sections() {
   return (
     <>
-      <div class="container mt-4 ms-5">
-        <div class="row">
+      <div class="container-fluid mt-4 ms-5">
+        <div class="row entryfee">
           <div class="col-lg-6 col-sm-6 text-secondary">
             <b>ENTRY FEES</b>
             <h1 class="fees text-success">

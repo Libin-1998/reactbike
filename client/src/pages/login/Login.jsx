@@ -6,6 +6,8 @@ import { useNavigate } from "react-router-dom";
 
 export default function Login() {
   const navigate=useNavigate()
+
+  
   
   const [input, setinput] = useState({
     name:'',
@@ -25,10 +27,12 @@ const inputchange=(event)=>{
     event.preventDefault()
     axios.post('http://localhost:8000/api/logs/login',input)
     .then((response)=>{
-      // console.log(response);
-      console.log(response.data.message);
+      console.log(response);
       toast.success(response.data.message)
-      localStorage.setItem('isLoggedIn',true)
+
+      sessionStorage.setItem('isLoggedIn',true)
+      sessionStorage.setItem('role',response.data.data.role)
+      sessionStorage.setItem('userlogid',response.data.userId)
 
       setTimeout(() => {
         navigate('/')
@@ -37,8 +41,7 @@ const inputchange=(event)=>{
 
     })
     .catch((error)=>{
-      // console.log(error);
-      console.log(error.response.data.message);
+      console.log(error);
       toast.error(error.response.data.message)
     })
   }
@@ -55,15 +58,15 @@ const inputchange=(event)=>{
 
             <form class="mt-3">
               <div class="mb-3">
-                <label for="" class="form-label">
+                <label for="" class="form-labellogin">
                   Name
                 </label>
-                <input type="text" name="name" onChange={inputchange} class="form-control" />
+                <input type="text" name="name" onChange={inputchange} class="form-controllogin" />
 
-                <label for="inputPassword5" class="form-label">
+                <label for="inputPassword5" class="form-labellogin">
                   Password
                 </label>
-                <input type="password" name="password" onChange={inputchange} class="form-control" />
+                <input type="password" name="password" onChange={inputchange} class="form-controllogin" />
               </div>
 
               <div class="d-grid gap-2">

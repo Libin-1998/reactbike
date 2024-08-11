@@ -11,14 +11,13 @@ export default function Event() {
     axios
       .get("http://localhost:8000/api/bike/view")
       .then((response) => {
-        console.log(response);
+        console.log(response.data.message);
         setDetails(response.data.data);
       })
       .catch((error) => {
         console.log(error);
       });
   }, []);
-  console.log(details);
 
   const handleDelete = (id) => {
     console.log(id);

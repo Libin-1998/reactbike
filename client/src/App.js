@@ -21,6 +21,11 @@ import Eventedit from "./components/editevent/Eventedit";
 import VolunteerList from "./components/volunteerList/VolunteerList";
 import Volunteeredit from "./components/editvolunteers/Volunteeredit";
 import 'react-toastify/dist/ReactToastify.css';
+import Cart from "./components/cart/Cart";
+import Spareparts from "./components/spareparts/Spareparts";
+import Addspare from "./components/addspare/Addspare";
+import Profile from "./components/profile/Profile";
+import Profileedit from "./components/profileedit/Profileedit";
 // import Counter from "./components/counter/Counter";
 
 
@@ -51,21 +56,27 @@ function App() {
     <Nav/>
   <Routes>
     <Route exact path="/" element={<Main/>}/>
-    <Route exact path="/contact" element={<Contact/>}/>
-    <Route exact path="/gallery" element={<Gallery/>}/>
-    <Route exact path="/blog" element={<Blog/>}/>
-    <Route exact path="/join" element={<Join/>}/>
-    <Route exact path="/volunteers" element={<Volunteers/>}/>
-    <Route exact path="/sections" element={<Sections/>}/>
-    <Route exact path="/events" element={<Event/>}/>
-    {/* <Route exact path="/counter" element={<Counter/>}/> */}
-    <Route exact path="/register" element={<Register/>}/>
-    <Route exact path="/login" element={<Login/>}/>  
-    <Route exact path="/addevents" element={<Eventform/>}/>  
-    <Route exact path="/newvolunteer" element={<Newvolunteer/>}/>
-    <Route exact path="/eventedit/:id" element={<Eventedit/>}/>
-    <Route exact path="/volform" element={<VolunteerList/>}/>
-    <Route exact path="/volunteeredit/:id" element={<Volunteeredit/>}/>
+    <Route path="/contact" element={<Contact/>}/>
+    <Route path="/gallery" element={<Gallery/>}/>
+    <Route path="/blog" element={<Blog/>}/>
+    <Route path="/join" element={<Join/>}/>
+    <Route path="/volunteers" element={<Volunteers/>}/>
+    <Route path="/sections" element={<Sections/>}/>
+    <Route path="/events" element={<Event/>}/>
+    {/* <Route  path="/counter" element={<Counter/>}/> */}
+    <Route path="/register" element={<Register/>}/>
+    <Route path="/login" element={<Login/>}/>  
+    <Route path="/addevents" element={<Eventform/>}/>  
+    <Route path="/newvolunteer" element={<Newvolunteer/>}/>
+    <Route path="/eventedit/:id" element={<Eventedit/>}/>
+    <Route path="/volform" element={<VolunteerList/>}/>
+    <Route path="/volunteeredit/:id" element={<Volunteeredit/>}/>
+    <Route path="/carts" element={<Cart/>}/>
+    <Route path="/spareparts" element={<Spareparts/>}/>
+    <Route path="/addspare" element={<Addspare/>}/>
+    <Route path="/profile" element={<Profile/>}/>
+    <Route path="/profileedit/:id" element={<Profileedit/>}/>
+
       </Routes>
   <Footer/>
 
