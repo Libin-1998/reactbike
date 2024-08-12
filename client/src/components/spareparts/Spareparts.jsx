@@ -13,7 +13,7 @@ export default function Spareparts() {
 
 
   useEffect(()=>{
-axios.get('https://reactbike.onrender.com/api/spare/viewdata')
+axios.get('http://localhost:8000/api/spare/viewdata')
 .then((response)=>{
   console.log((response.data.message));
   Setviewdata(response.data.data)
@@ -28,7 +28,7 @@ axios.get('https://reactbike.onrender.com/api/spare/viewdata')
 
   const cartButton=(id)=>{
     console.log(id);
-    axios.post(`https://reactbike.onrender.com/api/carts/add-cart/${userid}/${id}`,viewdata)
+    axios.post(`http://localhost:8000/api/carts/add-cart/${userid}/${id}`,viewdata)
     .then((response)=>{
       console.log(response.data.message); 
 

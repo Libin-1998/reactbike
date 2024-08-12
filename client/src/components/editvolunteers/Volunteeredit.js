@@ -25,7 +25,7 @@ export default function Volunteeredit() {
 
 
       useEffect(()=>{
-    axios.get(`https://reactbike.onrender.com/api/volregister/view_volunteers/${id}`)
+    axios.get(`http://localhost:8000/api/volregister/view_volunteers/${id}`)
 
     .then((response)=>{
         console.log(response);
@@ -64,7 +64,7 @@ export default function Volunteeredit() {
 
 
 
-        axios.put(`https://reactbike.onrender.com/api/volregister/update/${id}`,formdata)
+        axios.put(`http://localhost:8000/api/volregister/update/${id}`,formdata)
         .then((response)=>{
     console.log(response);
     if(response.data.updatestatus.modifiedCount===1){

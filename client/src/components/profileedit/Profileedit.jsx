@@ -13,7 +13,7 @@ export default function Profileedit() {
     const [item,Setitem]=useState({})
 
     useEffect(()=>{
-axios.get(`https://reactbike.onrender.com/api/reg/viewsingle/${id}`)
+axios.get(`http://localhost:8000/api/reg/viewsingle/${id}`)
 .then((response)=>{
     console.log(response); 
     Setitem(response.data.data)

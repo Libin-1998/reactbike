@@ -17,7 +17,7 @@ const dispatch=useDispatch()
 
   useEffect(() => {
     axios
-      .get("https://reactbike.onrender.com/api/volregister/view_volunteers")
+      .get("http://localhost:8000/api/volregister/view_volunteers")
       .then((response) => {
         console.log(response.data.data);
         // setData(response.data.data);
@@ -31,7 +31,7 @@ const dispatch=useDispatch()
 
   const volDelete=(id)=>{
     console.log(id);
-    axios.delete(`https://reactbike.onrender.com/api/volregister/delete/${id}`)
+    axios.delete(`http://localhost:8000/api/volregister/delete/${id}`)
     .then((response)=>{
       console.log(response);
       toast.success(response.data.message)

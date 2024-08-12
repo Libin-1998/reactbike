@@ -14,7 +14,7 @@ export default function Cart() {
 const userid=sessionStorage.getItem('userlogid') 
 
  useEffect(()=>{
-axios.get(`https://reactbike.onrender.com/api/carts/view-carts/${userid}`)
+axios.get(`http://localhost:8000/api/carts/view-carts/${userid}`)
 .then((response)=>{
   console.log(response);
   Setdata(response.data.data)
@@ -42,7 +42,7 @@ axios.get(`https://reactbike.onrender.com/api/carts/view-carts/${userid}`)
     window.location.reload()
   }
   // if(quantity!==1){
-    axios.get(`https://reactbike.onrender.com/api/carts/decrement/${id}`)
+    axios.get(`http://localhost:8000/api/carts/decrement/${id}`)
     .then((response)=>{
       console.log(response);
       Setdata((prevData) =>
@@ -61,7 +61,7 @@ axios.get(`https://reactbike.onrender.com/api/carts/view-carts/${userid}`)
  }
 
   const incrementButton=(id)=>{
-    axios.get(`https://reactbike.onrender.com/api/carts/increment/${id}`)
+    axios.get(`http://localhost:8000/api/carts/increment/${id}`)
     .then((response)=>{
       console.log(response);
       Setdata((prevData) =>
@@ -77,7 +77,7 @@ axios.get(`https://reactbike.onrender.com/api/carts/view-carts/${userid}`)
    }
 
    const TrashClick=(id)=>{
-axios.delete(`https://reactbike.onrender.com/api/carts/delete/${id}`)
+axios.delete(`http://localhost:8000/api/carts/delete/${id}`)
 .then((response)=>{
   console.log(response);
   // window.location.reload()
