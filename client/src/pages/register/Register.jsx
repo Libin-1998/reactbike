@@ -28,7 +28,7 @@ export default function Register() {
   const handleSubmit = (event) => {
     event.preventDefault();
     axios
-      .post("http://localhost:8000/api/reg/create", type)
+      .post("https://reactbike.onrender.com/api/reg/create", type)
       .then((response) => {
         console.log(response);
         toast.success(response.data.message);

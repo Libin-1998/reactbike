@@ -34,7 +34,7 @@ export default function Addspare() {
 
 
 
-axios.post('http://localhost:8000/api/spare/add-product',formdata)
+axios.post('https://reactbike.onrender.com/api/spare/add-product',formdata)
 .then((response)=>{
   console.log(response);
   toast.success(response.data.message)
