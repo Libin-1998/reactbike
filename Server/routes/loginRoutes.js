@@ -35,7 +35,7 @@ loginRoutes.post("/login", async (req, res) => {
         userId:checkname._id,
         name:checkname.name,
       },
-      "secret_key",
+      process.env.JWT_KEY,
       {
         expiresIn:'1h'
       }

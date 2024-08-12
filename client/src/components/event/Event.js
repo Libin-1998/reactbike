@@ -9,7 +9,7 @@ export default function Event() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8000/api/bike/view")
+      .get("https://reactbike.onrender.com/api/bike/view")
       .then((response) => {
         console.log(response.data.message);
         setDetails(response.data.data);
@@ -22,7 +22,7 @@ export default function Event() {
   const handleDelete = (id) => {
     console.log(id);
     axios
-      .delete(`http://localhost:8000/api/bike/delete/${id}`)
+      .delete(`https://reactbike.onrender.com/api/bike/delete/${id}`)
       .then((response) => {
         console.log(response);
         toast.success(response.data.message)

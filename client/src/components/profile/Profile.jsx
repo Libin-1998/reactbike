@@ -13,7 +13,7 @@ const userId=sessionStorage.getItem('userlogid')
 const [data,Setdata]=useState({})
 
 useEffect(()=>{
-    axios.get(`http://localhost:8000/api/reg/viewsingle/${userId}`)
+    axios.get(`https://reactbike.onrender.com/api/reg/viewsingle/${userId}`)
     .then((response)=>{
       console.log(response);
       Setdata(response.data.data)

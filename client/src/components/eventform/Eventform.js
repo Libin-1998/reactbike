@@ -39,7 +39,7 @@ export default function Eventform() {
     data.append('place',eventinput.place)
 
 
-    axios.post("http://localhost:8000/api/bike/add_details",data)
+    axios.post("https://reactbike.onrender.com/api/bike/add_details",data)
     .then((response)=>{
         console.log(response);
       toast.success(response.data.message)

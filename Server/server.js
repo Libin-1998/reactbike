@@ -1,6 +1,7 @@
 var express=require('express')
 var mongoose=require('mongoose')
 const cors=require('cors')
+const dotenv=require('dotenv')
 const userRoutes = require('./routes/userRoutes')
 const shopRoutes = require('./routes/shopRoutes')
 const pardsRoutes = require('./routes/pardsRoutes')
@@ -12,12 +13,13 @@ const volunteerRoutes = require('./routes/volunteerRoutes')
 
 var app=express()
 app.use(cors())
+dotenv.config()
 
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 
 // connecting to DB
-mongoose.connect('mongodb+srv://libinninteen98:EhF3Fs510HyhC9cd@cluster0.4e1hgmr.mongodb.net/bikedatabase?retryWrites=true&w=majority&appName=Cluster0')
+mongoose.connect(process.env.MONGO_URL)
 .then(()=>{
     console.log('connected successfully');
 })
@@ -36,11 +38,11 @@ app.use('/api/volregister',volunteerRoutes)
 
 
 
-app.get('/',(req,res)=>{
-    res.send('Home')
-})
+// app.get('/',(req,res)=>{
+//     res.send('Home')
+// })
 
 
-app.listen(8000,()=>{
-    console.log('Running on 8000');
+app.listen(process.env.PORT,()=>{
+    console.log('Running on',process.env.PORT);
 })

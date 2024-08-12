@@ -19,7 +19,7 @@ export default function Eventedit() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8000/api/bike/view/${id}`)
+      .get(`https://reactbike.onrender.com/api/bike/view/${id}`)
       .then((response) => {
         console.log(response);
         seteventinput(response.data.data);
@@ -55,7 +55,7 @@ const imageHandler=(event)=>{
 
 
     axios
-      .put(`http://localhost:8000/api/bike/update/${id}`, data)
+      .put(`https://reactbike.onrender.com/api/bike/update/${id}`, data)
       .then((response) => {
         console.log(response);
         if (response.data.updatestatus.modifiedCount === 1) {

@@ -25,7 +25,7 @@ const inputchange=(event)=>{
 
   const loginsubmit=(event)=>{
     event.preventDefault()
-    axios.post('http://localhost:8000/api/logs/login',input)
+    axios.post('https://reactbike.onrender.com/api/logs/login',input)
     .then((response)=>{
       console.log(response);
       toast.success(response.data.message)
@@ -60,12 +60,12 @@ const inputchange=(event)=>{
               <div class="mb-3">
                 <label for="" class="form-labellogin">
                   Name
-                </label>
-                <input type="text" name="name" onChange={inputchange} class="form-controllogin" />
+                </label><br />
+                <input type="text" name="name" onChange={inputchange} class="form-controllogin" /><br />
 
                 <label for="inputPassword5" class="form-labellogin">
                   Password
-                </label>
+                </label><br />
                 <input type="password" name="password" onChange={inputchange} class="form-controllogin" />
               </div>
 

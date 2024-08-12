@@ -43,7 +43,7 @@ export default function VolunteerList() {
     formdata.append('age',team.age)
 
     axios
-      .post("http://localhost:8000/api/volregister/add_volunteers", formdata)
+      .post("https://reactbike.onrender.com/api/volregister/add_volunteers", formdata)
       .then((response) => {
         console.log(response);
 
