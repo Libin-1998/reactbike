@@ -5,7 +5,7 @@ export default function Volunteers() {
   return (
     <>
     
-      <div className="container volstart">
+      <div className="container-fluid volstart">
         <div className="container-fluid volunteerbg"data-aos="fade-down-right">
           <h1 className="">
             WE ARE LOOKING FOR <br></br>VOLUNTEERS!

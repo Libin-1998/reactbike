@@ -17,8 +17,9 @@ export default function Nav() {
 
   return (
     <>
-      <div className="container navtop">
-        <ul class="nav justify-content-center mt-5">
+
+      <div className="container-fluid navtop">
+        <ul class="nav justify-content-center">
 
           {logged == "true" ? (
             <>

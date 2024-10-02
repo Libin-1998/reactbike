@@ -14,7 +14,7 @@ registerRoutes.post('/create',async(req,res)=>{
         city:req.body.city,
         phone:req.body.phone,
         dob:req.body.dob,
-        zip:req.body.dob,
+        zip:req.body.zip,
         state:req.body.state,
         gender:req.body.gender,
 
@@ -24,7 +24,9 @@ registerRoutes.post('/create',async(req,res)=>{
         res.status(201).json({
             success:true,
             error:false,
+            data:save,
             message:'save successfully',
+        
         })
     }
     else{

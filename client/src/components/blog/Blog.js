@@ -5,7 +5,7 @@ export default function Blog() {
   return (
     <>
 
-<div className="container blogstart">
+<div className="container-fluid blogstart">
   <div className="bloghead">
   <h5 className="">FROM THE BLOG</h5>
   <h1 className="bgnewsfeed">news feed</h1>

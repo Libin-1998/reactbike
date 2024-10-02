@@ -26,6 +26,7 @@ import Spareparts from "./components/spareparts/Spareparts";
 import Addspare from "./components/addspare/Addspare";
 import Profile from "./components/profile/Profile";
 import Profileedit from "./components/profileedit/Profileedit";
+import './App.css'
 // import Counter from "./components/counter/Counter";
 
 
@@ -37,7 +38,7 @@ function App() {
   return (
     <>
 <Router>
-<div class="container text-center mt-5">
+{/* <div class="containertop text-center mt-5">
       <div class="row align-items-start">
         <h3 class="col text-warning">
           <b> AUG 12-13-2020</b>
@@ -45,14 +46,39 @@ function App() {
         <h2 class="col">
           <img src={"/img/logo.png"}height={'40px'}></img>
         </h2>
-        <div class="col mt-2">
-          <i class="bi bi-pinterest p-2 me-1 bg-warning"></i>
-          <i class="bi bi-instagram p-2 me-1 bg-warning"></i>
-          <i class="bi bi-twitter p-2 me-1 bg-warning"></i>
-          <i class="bi bi-facebook p-2 me-1 bg-warning"></i>
+        <div class="side col m-2">
+          <i class="bi bi-pinterest p-2 bg-warning"></i>
+          <i class="bi bi-instagram p-2 bg-warning"></i>
+          <i class="bi bi-twitter p-2 bg-warning"></i>
+          <i class="bi bi-facebook p-2 bg-warning"></i>
         </div>
       </div>
+    </div> */}
+
+<div class="toppage container-fluid text-center">
+  <div class="top row">
+    <div class="topdate1 col">
+    <b> AUG 12-13-2020</b>
     </div>
+    <div class="topdate2 col">
+    <img src={"/img/logo.png"}height={'40px'}></img>
+    </div>
+    <div class="topdate3 col">
+    <div class="topicon col">
+          <i class="bi bi-pinterest p-2 bg-warning"></i>
+          <i class="bi bi-instagram p-2 bg-warning"></i>
+          <i class="bi bi-twitter p-2 bg-warning"></i>
+          <i class="bi bi-facebook p-2 bg-warning"></i>
+        </div>
+    </div>
+  </div>
+</div>
+
+ 
+
+
+
+
     <Nav/>
   <Routes>
     <Route exact path="/" element={<Main/>}/>

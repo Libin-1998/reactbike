@@ -51,11 +51,11 @@ justify-content: center;
   background-image: url(../../../public/img/bikerace\ .jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  /* padding: 3%; */
-  /* width: 90%; */
-  margin: 0%;
+  padding: 30px;
 }
-
+.class{
+  padding: 40px;
+}
 @media(max-width:418px){
   .onerow{
     display: flex;

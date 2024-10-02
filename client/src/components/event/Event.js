@@ -40,7 +40,7 @@ setTimeout(()=>{
 
   return (
     <>
-      <div className="container">
+      <div className="container-fluid">
         <ToastContainer />
         <h1 className="eventheading">
           <span className="race">RACE </span>

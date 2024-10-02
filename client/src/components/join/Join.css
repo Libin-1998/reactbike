@@ -19,9 +19,8 @@
     background-image: url(../../../public/img/enetrnow-img.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 80vh;
+    height: 100vh;
     padding-top: 50px;
-    width: 90%;
 }
 .joinenter{
     background-color: orange;

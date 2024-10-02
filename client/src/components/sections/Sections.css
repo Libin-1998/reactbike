@@ -1,12 +1,29 @@
+/* .sectionstart{
+padding: 30px 30px 80px 30px;
+}
+
 hr{
     border:2px solid black;
     width: 40px;
-    justify-content: center;
-    margin-left: 60px;
+    margin-left: auto;
+    margin-right: auto;
 }
-@media(max-width:600){
 
-}
 .entryfee{
     padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+} */
+
+
+hr{
+    border:2px solid black;
+    width: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sessionstart{
+    padding: 40px;
 }

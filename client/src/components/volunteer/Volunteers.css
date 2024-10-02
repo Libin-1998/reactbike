@@ -17,7 +17,7 @@
 .participants{
     display: flex;
     justify-content: space-around;
-    padding-top: 50px;
+    padding: 30px;
     background-color: rgb(252, 228, 198);
 }
 .reviews{
@@ -78,4 +78,7 @@ padding-left: 50px;
 }   
 .bloghead{
     width: 98%;
+}
+.volstart{
+    padding: 30px;
 }

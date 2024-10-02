@@ -52,8 +52,6 @@ const imageHandler=(event)=>{
     data.append('image',eventinput.image)
     data.append('place',eventinput.place)
 
-
-
     axios
       .put(`https://reactbike.onrender.com/api/bike/update/${id}`, data)
       .then((response) => {

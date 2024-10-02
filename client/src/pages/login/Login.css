@@ -1,18 +1,18 @@
-.loginbgimage{
+/* .loginbgimage{
 background-image: url(../../../public/img/gallery-3.jpg);
 background-repeat: no-repeat;
 background-size: cover ;
 color: black;
 }
-.fb{
+.logfb{
     height: 15px;
     width: 15px;
 }
-.google{
+.loggoogle{
     height: 15px;
     width: 15px;
 }
-.form-labellogin{
+.logform-labellogin{
     text-shadow: 2px 2px blue;
     font-size: larger;
     font-weight: 900;
@@ -20,6 +20,38 @@ color: black;
 
 }
 
-.form-controllogin{
+.logform-controllogin{
+    width: 100%;
+} */
+
+.loginpage {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    background-image: url(../../../public/img/gallery-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.login {
+    width: 30%;
+}
+
+.fbicon {
+    padding-right: 10px;
+}
+
+.googleicon {
+    padding-right: 10px;
+}
+
+.loglabel {
+    text-shadow: 2px 2px blue;
+    font-size: larger;
+    font-weight: 900;
+    color: white;
+}
+
+.logimg {
     width: 100%;
 }

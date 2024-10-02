@@ -34,7 +34,7 @@ export default function Home() {
 </div>
 
 
-<div className='container class'>
+<div className='container-fluid class'>
   <div className='onerow'>
     <div className='column-1'><h3>Race <br></br> Information</h3>
     <p><b>Details</b></p>
